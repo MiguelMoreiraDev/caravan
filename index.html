@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Caravan | TailwindCSS @miguelrkt__</title>
-    </head>
-    <body>
-        <script type="module" src="/main.js"></script>
-    </body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caravan | TailwindCSS @miguelrkt__</title>
+  </head>
+  <body class="w-full h-screen">
+    <header>
+      <nav class="bg-zinc-100 flex justify-between items-center p-6">
+        <a href="index.html">
+          <img src="/caravan.svg" alt="Logo da marca Caravan" />
+        </a>
+        <button class="md:hidden text-2xl font-bold text-zinc-600">Menu</button>
+
+        <div class="hidden md:block">
+          <ul class="flex gap-6 items-center transition-colors">
+            <li class="font-medium text-xl text-zinc-600">
+              <a href="locais.html">Locais ▼</a>
+            </li>
+            <li class="font-medium text-xl text-zinc-400 hover:text-zinc-950">
+              <a href="planos.html">Planos</a>
+            </li>
+            <li class="font-medium text-xl text-zinc-400 hover:text-zinc-950">
+              <a href="contato.html">Contato</a>
+            </li>
+            <li class="font-medium text-xl text-zinc-400 hover:text-zinc-950">
+              <a href="#">Login</a>
+            </li>
+            <li
+              class="font-bold text-xl text-blue-300 border-2 border-blue-300 p-2 rounded-md hover:bg-blue-300 hover:text-white"
+            >
+              <a href="inscricao.html">Inscreva-se</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
