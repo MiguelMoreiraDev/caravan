@@ -6,17 +6,23 @@
     <title>Caravan | TailwindCSS @miguelrkt__</title>
   </head>
   <body class="w-full h-screen">
+    <!-- Header -->
     <header>
       <nav class="bg-zinc-100 flex justify-between items-center p-6">
         <a href="index.html">
           <img src="/caravan.svg" alt="Logo da marca Caravan" />
         </a>
-        <button class="md:hidden text-2xl font-bold text-zinc-600">Menu</button>
+        <button class="md:hidden text-2xl font-bold text-zinc-600">
+          <i data-lucide="menu" class="w-9 h-9"></i>
+        </button>
 
         <div class="hidden md:block">
           <ul class="flex gap-6 items-center transition-colors">
-            <li class="font-medium text-xl text-zinc-600">
-              <a href="locais.html">Locais ▼</a>
+            <li
+              class="font-medium text-xl text-zinc-400 flex items-end gap-1 hover:text-zinc-950"
+            >
+              <a href="locais.html"> Locais </a>
+              <i data-lucide="chevron-down"></i>
             </li>
             <li class="font-medium text-xl text-zinc-400 hover:text-zinc-950">
               <a href="planos.html">Planos</a>
@@ -36,6 +42,7 @@
         </div>
       </nav>
     </header>
+    <!-- Fim Header -->
 
     <script type="module" src="/main.js"></script>
   </body>
